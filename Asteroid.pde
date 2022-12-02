@@ -1,5 +1,5 @@
 class Asteroid extends Floater{
-  protected double rotSpeed;
+ protected double rotSpeed;
  public Asteroid(){
     rotSpeed = 5;
     corners = 6;
@@ -16,4 +16,16 @@ class Asteroid extends Floater{
     turn(rotSpeed);
     super.move();
   }
+  public double getRockCenterX(){
+      return myCenterX;
+    }
+    public void setRockCenterX(double centerX){
+      myCenterX = centerX;
+    }
+    public double getRockCenterY(){
+      return myCenterY;
+    }
+    public void setRockCenterY(double centerY){
+      myCenterY = centerY;
+    }
 }
