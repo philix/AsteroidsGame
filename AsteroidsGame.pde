@@ -25,6 +25,9 @@ public void draw(){
       rock.remove(i);
       i--;
     }
+    if(shot.get(j).myCenterX > 495 || shot.get(j).myCenterX<5|| shot.get(j).myCenterY<5){
+      shot.remove(j);
+    }
   }
   for(int i = 0; i<shot.size(); i++){
     shot.get(i).move();
