@@ -39,7 +39,7 @@ public void draw(){
       shot.remove(j);
       break;
     }
-    if(shot.get(j).myCenterX > 495 || shot.get(j).myCenterX<5|| shot.get(j).myCenterY<5){
+    if(shot.get(j).myCenterX > 495 || shot.get(j).myCenterX<5|| shot.get(j).myCenterY<5 || shot.get(j).myCenterY>495){
       shot.remove(j);
     }
     }
